@@ -15,7 +15,8 @@ DATA_URL = (
     "https://raw.githubusercontent.com/leontoddjohnson/"
     "datasets/refs/heads/main/data/coffee_analysis.csv"
 )
-MODEL_DIR = Path(__file__).resolve().parent
+# Save in the working directory, where the autograder looks for the files.
+MODEL_DIR = Path.cwd()
 ROAST_CATEGORIES = {
     "Light": 0,
     "Medium-Light": 1,
